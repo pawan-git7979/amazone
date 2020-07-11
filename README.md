@@ -1,2 +1,2 @@
 # amazone
-e-commerce website having various sections.
+e-commerce website having various sections and features.
