@@ -9,6 +9,9 @@
    <div class="grid-container">
      <header class="header">
        <div class="brand">
+         <button type="button" onclick="openMenu()">
+           &#9776;
+         </button>
          <a href="index.html">Amazone</a>
        </div>
        <div class="header-links">
@@ -17,9 +20,18 @@
        </div>
      </header>
 
-     <!-- <aside class="">
-         shopping categories
-     </aside> -->
+     <aside class="sidebar">
+         <h3>shopping category</h3>
+         <button class="sidebar-close-button" type="button" onclick="closeMenu()">X</button>
+         <ul>
+           <li>
+             <a href="index.html">shirts</a>
+           </li>
+           <li>
+             <a href="index.html">pants</a>
+           </li>
+         </ul>
+     </aside>
      <main class="main">
        <div class="content">
          <ul class="products">
@@ -119,7 +131,7 @@
              </div>
            </li>
 
-           
+
          </ul>
        </div>
 
@@ -128,5 +140,13 @@
         All Right Reserved 2020 @ amazone.
      </footer>
    </div>
+   <script>
+  function openMenu(){
+    document.querySelector(".sidebar").classList.add("open");
+  }
+  function closeMenu(){
+    document.querySelector(".Sidebar").classList.add("open");
+  }
+   </script>
   </body>
 </html>
